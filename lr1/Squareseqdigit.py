@@ -1,4 +1,4 @@
-def calc_length_num(n):
+def calc_length_num(n): #функция для подсчета символов в числе
     lenght = 0
     while (n > 0):
         lenght += 1
@@ -8,9 +8,9 @@ def calc_length_num(n):
 def squareSequenceDigit(n):
     x = 1
     while(True):
-        lenght = calc_length_num(x**2) # проверяем длину очередного числа
+        lenght = calc_length_num(x**2) # проверяем длину очередного числа(квадрата)
         if (lenght < n): # если его длина меньше n
-            n -= lenght # вычитаем из n эту длину
+            n -= lenght # вычитаем из n эту длину(чтобы приблизиться к нужному)
         else: # иначе возвращаем n-ую цифру числа
             for i in range(n): # путём отсечения последней
                 x = x ** 2 % 10
