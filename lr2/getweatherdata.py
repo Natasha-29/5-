@@ -1,6 +1,6 @@
 import requests
 
-api_key = "e48674a3824c7010b223ba7f1086be72" # api ключ 
+api_key = "ключ" # api ключ 
 url = "http://api.openweathermap.org/data/2.5/weather" # урл запроса
 
 def get_weather_data(place, key=api_key):
