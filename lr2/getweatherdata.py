@@ -4,7 +4,7 @@ api_key = "ключ" # api ключ
 url = "http://api.openweathermap.org/data/2.5/weather" # урл запроса
 
 def get_weather_data(place, key=api_key):
-    if place is None or place == '' or api_key is None or api_key == '':                      # проверка на пустые строки
+    if place is None or place == '' or key is None or key == '':                      # проверка на пустые строки
         return None
 
     resp = requests.get(url)
